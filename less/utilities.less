@@ -1,0 +1,174 @@
+﻿@import (reference) "config.less";
+@import (reference) "mixins.less";
+
+/*== Utilities class ==*/
+.clearfix {
+    &:before, &:after {
+        .display(table);
+        .cont(" ");
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*== spacing ==*/
+.no-padd {
+    .padd;
+}
+.padd-sml {
+    .padd(@sml-space);
+}
+.padd-top-sml {
+    .padd-top(@sml-space);
+}
+.padd-right-sml {
+    .padd-right(@sml-space);
+}
+.padd-bottom-sml {
+    .padd-bottom(@sml-space);
+}
+.padd-left-sml {
+    .padd-left(@sml-space);
+}
+.padd-med {
+    .padd(@med-space);
+}
+.padd-top-med {
+    .padd-top(@med-space);
+}
+.padd-right-med {
+    .padd-right(@med-space);
+}
+.padd-bottom-med {
+    .padd-bottom(@med-space);
+}
+.padd-left-med {
+    .padd-left(@med-space);
+}
+.padd-lg {
+    .padd(@med-space);
+}
+.padd-top-lg {
+    .padd-top(@lg-space);
+}
+.padd-right-lg {
+    .padd-right(@lg-space);
+}
+.padd-bottom-lg {
+    .padd-bottom(@lg-space);
+}
+.padd-left-lg {
+    .padd-left(@lg-space);
+}
+
+.no-mgn {
+    .mgn;
+}
+.mgn-sml {
+    .padd(@sml-space);
+}
+.mgn-top-sml {
+    .mgn-top(@sml-space);
+}
+.mgn-right-sml {
+    .mgn-right(@sml-space);
+}
+.mgn-bottom-sml {
+    .mgn-bottom(@sml-space);
+}
+.mgn-left-sml {
+    .mgn-left(@sml-space);
+}
+.mgn-med {
+    .padd(@med-space);
+}
+.mgn-top-med {
+    .mgn-top(@med-space);
+}
+.mgn-right-med {
+    .mgn-right(@med-space);
+}
+.mgn-bottom-med {
+    .mgn-bottom(@med-space);
+}
+.mgn-left-med {
+    .mgn-left(@med-space);
+}
+.mgn-lg {
+    .padd(@med-space);
+}
+.mgn-top-lg {
+    .mgn-top(@lg-space);
+}
+.mgn-right-lg {
+    .mgn-right(@lg-space);
+}
+.mgn-bottom-lg {
+    .mgn-bottom(@lg-space);
+}
+.mgn-left-lg {
+    .mgn-left(@lg-space);
+}
+
+/*== text ==*/
+.txt-center {
+    .txt-align(center);
+}
+.txt-left {
+    .txt-align(left);
+}
+.txt-right {
+    .txt-align(right);
+}
+
+/*== shape ==*/
+.rounded {
+    .bdr-radius(50% 50%);
+}
+
+/*== sizing ==*/
+.full-w {
+    width: 100%;
+}
+.full-h {
+    height: 100%;
+}
+
+/*== display ==*/
+.block {
+    .display(block);
+}
+.inline-block {
+    .display(inline-block);
+}
+
+/*== positioning ==*/
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.no-float {
+    float: none;
+}
+.v-top {
+	.valign(top);
+}
+.v-middle {
+	.valign(middle);
+}
+.v-bottom {
+	.valign(bottom);
+}
+
+/*== misc ==*/
+.pointer {
+	cursor: pointer;
+}
+
+/*== border ==*/
+.no-bdr {
+	.bdr(none);
+}

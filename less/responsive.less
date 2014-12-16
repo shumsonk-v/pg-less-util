@@ -1,0 +1,89 @@
+﻿// Here we define the lower and upper bounds for each media size
+@xsmall-min: 0em;        /*0px*/
+@xsmall-max: 30em;       /*480px*/
+
+@small-min: 30.063em;  /*481px*/
+@small-max: 40em;      /*640px*/
+
+@medium-min: 40.063em;  /*641px*/
+@medium-max: 48em;      /*768px*/
+
+@xmedium-min: 48.063em;  /*769px*/
+@xmedium-max: 64em;  /*1024px*/
+
+@large-min: 64.063em;  /*1025px*/
+@large-max: 90em;      /*1440px*/
+
+@xlarge-min: 90.063em;  /*1441px*/
+@xlarge-max: 120em;      /*1920px*/
+
+@xxlarge-min: 120.063em;  /*1921px*/
+@xxlarge-max: 160em;    /*2560px*/
+
+
+// Media Queries
+@screen: ~"only screen";
+
+@landscape: ~"@{screen} and (orientation: landscape)";
+@portrait: ~"@{screen} and (orientation: portrait)";
+
+@xsmall-up: @screen;
+
+@small-up: ~"@{screen} and (min-width: @{small-min})";
+@small-only: ~"@{small-up} and (max-width: @{small-max})";
+@small-up-landscape: ~"@{small-up} and (orientation: landscape)";
+@small-up-portrait: ~"@{small-up} and (orientation: portrait)";
+
+
+@medium-up: ~"@{screen} and (min-width: @{medium-min})";
+@medium-only: ~"@{medium-up} and (max-width: @{medium-max})";
+@medium-up-landscape: ~"@{medium-up} and (orientation: landscape)";
+@medium-up-portrait: ~"@{medium-up} and (orientation: portrait)";
+
+@xmedium-up: ~"@{screen} and (min-width: @{xmedium-min})";
+@xmedium-only: ~"@{xmedium-up} and (max-width: @{xmedium-max})";
+@xmedium-up-landscape: ~"@{xmedium-up} and (orientation: landscape)";
+@xmedium-up-portrait: ~"@{xmedium-up} and (orientation: portrait)";
+
+@large-up: ~"@{screen} and (min-width: @{large-min})";
+@large-only: ~"@{large-up} and (max-width: @{large-max})";
+@large-up-landscape: ~"@{large-up} and (orientation: landscape)";
+@large-up-portrait: ~"@{large-up} and (orientation: portrait)";
+
+@xlarge-up: ~"@{screen} and (min-width: @{xlarge-min})";
+@xlarge-only: ~"@{xlarge-up} and (max-width: @{xlarge-max})";
+@xlarge-up-landscape: ~"@{xlarge-up} and (orientation: landscape)";
+@xlarge-up-portrait: ~"@{xlarge-up} and (orientation: portrait)";
+
+@xxlarge-up: ~"@{screen} and (min-width: @{xxlarge-min})";
+@xxlarge-only: ~"@{xxlarge-up} and (max-width: @{xxlarge-max})";
+@xxlarge-up-landscape: ~"@{xxlarge-up} and (orientation: landscape)";
+@xxlarge-up-portrait: ~"@{xxlarge-up} and (orientation: portrait)";
+
+/* ==== How To Use =====
+@media @screen { }
+
+//481+
+@media @small-up { }
+@media @small-only { }
+
+//641+
+@media @medium-up { }
+@media @medium-only { }
+
+//769+
+@media @xmedium-up { }
+@media @xmedium-only { }
+
+//1025+
+@media @large-up { }
+@media @large-only { }
+
+//1441+
+@media @xlarge-up { }
+@media @xlarge-only { }
+
+//1921+
+@media @xxlarge-up { }
+@media @xxlarge-only { }
+*/
