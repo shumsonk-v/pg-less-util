@@ -15,4 +15,4 @@ You can just download LESS files from the repository and compile them before use
 ==========
 Demo
 ==========
-This is an awesome project or plugin but I have created a plain website to show you some sample of how to use it. Just visit http://vspw.sundayparty.net/ to see (it's really plain website, I will decorate it later).
+This is not an awesome project or jquery plugin but I did create a small web page to show you some sample of how to use it. Just visit http://vspw.sundayparty.net/ to see (it's a reasponsive website but doesn't have any cool feature yet, I will decorate it later).
