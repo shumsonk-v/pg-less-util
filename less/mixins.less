@@ -238,6 +238,23 @@
 	line-height: @value;
 }
 
+/*== font ==*/
+.fn-size(@value: medium) {
+	font-size: @value;
+}
+.fn-style(@value: normal) {
+	font-style: @value;
+}
+.fn-variant(@value: normal) {
+	font-variant: @value;
+}
+.fn-weight(@value: normal) {
+	font-weight: @value;
+}
+.fn-stretch(@value: normal) {
+	font-stretch: @value;
+}
+
 /*== transition ==*/
 .transition(@value: all 0s ease) {
     -moz-transition: @value;
@@ -256,4 +273,21 @@
     background: -ms-linear-gradient(top,  @upper-color 0,@lower-color 100%); /* IE10+ */
     background: linear-gradient(to bottom,  @upper-color 0,@lower-color 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{upper-color}', endColorstr='@{lower-color}',GradientType=0 ); /* IE6-9 */
+}
+
+/*== misc ==*/
+.ovflow(@value: visible) {
+	overflow: @value;
+}
+.ovflow-x(@value: visible) {
+	overflow-x: @value;
+}
+.ovflow-y(@value: visible) {
+	overflow-y: @value;
+}
+.wht-spc(@value: normal) {
+	white-space: @value;
+}
+.wd-wrap(@value: normal) {
+	word-wrap: @value;
 }
