@@ -132,6 +132,8 @@
 
 /*== box style ==*/
 .box-shadow(@value: none) {
+	-webkit-box-shadow: @value;
+	-moz-box-shadow: @value;
 	box-shadow: @value;
 }
 .box-sizing(@value: content-box) {
@@ -205,6 +207,9 @@
 	right: @right;
 	bottom: @bottom;
 	left: @left;
+}
+.anchor-all(@value: auto) {
+	.anchor(@value,@value,@value,@value);
 }
 
 /*== text ==*/
