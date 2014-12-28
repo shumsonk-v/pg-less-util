@@ -274,6 +274,13 @@
     transition: @value;
 }
 
+/*== transform ==*/
+.transform(@value: none) {
+	-ms-transform: @value; /* IE 9 */
+	-webkit-transform: @value; /* Chrome, Safari, Opera */
+	transform: @value;
+}
+
 /*== color ==*/
 .gradient-vert(@upper-color: transparent, @lower-color: transparent) {
     background: @upper-color; /* Old browsers */
