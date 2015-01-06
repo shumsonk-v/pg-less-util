@@ -1,0 +1,91 @@
+@import (reference) "utilities.less";
+
+.xsml-visible {
+	.display(block);
+}
+.sml-visible, .med-visible, .xmed-visible, .lg-visible, .xlg-visible {
+	.hide;
+}
+
+.xsml-hide {
+	.hide;
+}
+.sml-hide, .med-hide, .xmed-hide, .lg-hide, .xlg-hide {
+	.display(block);
+}
+
+@media @small-up {
+	.xsml-visible {
+		.hide;
+	}
+	.sml-visible {
+		.display(block);
+	}
+	
+	.xsml-hide {
+		.display(block);
+	}
+	.sml-hide {
+		.hide;
+	}
+}
+@media @medium-up {
+	.xsml-visible, .sml-visible {
+		.hide;
+	}
+	.med-visible {
+		.display(block);
+	}
+
+	.xsml-hide, .sml-hide {
+		.display(block);
+	}
+	.med-hide {
+		.hide;
+	}
+}
+@media @xmedium-up {
+	.xsml-visible, .sml-visible, .med-visible {
+		.hide;
+	}
+	.xmed-visible {
+		.display(block);
+	}
+
+	.xsml-hide, .sml-hide, .med-hide {
+		.display(block);
+	}
+	.xmed-hide {
+		.hide;
+	}
+}
+@media @large-up {
+	.xsml-visible, .sml-visible, .med-visible, .xmed-visible {
+		.hide;
+	}
+	.lg-visible {
+		.display(block);
+	}
+
+	.xsml-hide, .sml-hide, .med-hide, .xmed-hide {
+		.display(block);
+	}
+	.lg-hide {
+		.hide;
+	}
+}
+@media @xlarge-up {
+	.xsml-visible, .sml-visible, .med-visible, .xmed-visible, .lg-visible {
+		.hide;
+	}
+	.xlg-visible {
+		.display(block);
+	}
+
+	.xsml-hide, .sml-hide, .med-hide, .xmed-hide, .lg-hide {
+		.display(block);
+	}
+	.xlg-hide {
+		.hide;
+	}
+}
