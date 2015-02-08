@@ -15,12 +15,24 @@
 @xmedium-min: 48em;
 @xmedium-max: 61.938em;
 
-/* 992 - 1199 */
+/* 992 - 1199 : general medium resolution device */
 @large-min: 62em;
 @large-max: 74.938em;
 
-/* 1200+ */ 
+/* 1200 - 1359 : mini HD resolution device */ 
 @xlarge-min: 75em;
+@xlarge-max: 84.938em;
+
+/* 1360 - 1439 : medium screen size device */
+@xxlarge-min: 85em;
+@xxlarge-max: 89.938em;
+
+/* 1440 - 1919 : medium screen size device */
+@xxxlarge-min: 90em;
+@xxxlarge-max: 119.938em;
+
+/* 1920+ : full HD or larger size device */
+@sxlarge-min: 120em;
 
 
 /*=== Media Query ===*/
@@ -59,6 +71,21 @@
 @xlarge-up-landscape: ~"@{xlarge-up} and (orientation: landscape)";
 @xlarge-up-portrait: ~"@{xlarge-up} and (orientation: portrait)";
 
+@xxlarge-up: ~"@{screen} and (min-width: @{xxlarge-min})";
+@xxlarge-only: ~"@{xxlarge-up}";
+@xxlarge-up-landscape: ~"@{xxlarge-up} and (orientation: landscape)";
+@xxlarge-up-portrait: ~"@{xxlarge-up} and (orientation: portrait)";
+
+@xxxlarge-up: ~"@{screen} and (min-width: @{xxxlarge-min})";
+@xxxlarge-only: ~"@{xxxlarge-up}";
+@xxxlarge-up-landscape: ~"@{xxxlarge-up} and (orientation: landscape)";
+@xxxlarge-up-portrait: ~"@{xxxlarge-up} and (orientation: portrait)";
+
+@sxlarge-up: ~"@{screen} and (min-width: @{sxlarge-min})";
+@sxlarge-only: ~"@{sxlarge-up}";
+@sxlarge-up-landscape: ~"@{sxlarge-up} and (orientation: landscape)";
+@sxlarge-up-portrait: ~"@{sxlarge-up} and (orientation: portrait)";
+
 /* ==== How To Use ====
 @media @screen { }
 
@@ -79,5 +106,14 @@
 
 @media @xlarge-up { }
 @media @xlarge-only { }
+
+@media @xxlarge-up { }
+@media @xxlarge-only { }
+
+@media @xxxlarge-up { }
+@media @xxxlarge-only { }
+
+@media @sxlarge-up { }
+@media @sxlarge-only { }
 
 */
