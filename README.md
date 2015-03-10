@@ -15,4 +15,4 @@ You can just download LESS files from the repository and compile them before use
 ==========
 Demo
 ==========
-This is not an awesome project or jquery plugin but I did create a small web page to show you some sample of how to use it. Just visit http://vspw.sundayparty.net/pg-less-util to see (it's a responsive website but doesn't have any cool feature yet, I will decorate it later).
+The demo website is now under the improvement process, sorry for inconvenience. But if you are familiar with LESS or Bootstrap, I'm sure you can use it easily just by looking at my code.
